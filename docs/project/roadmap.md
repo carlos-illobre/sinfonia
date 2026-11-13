@@ -61,6 +61,8 @@ Decidido por Carlos (constitución, principio VI):
 - **Ni voz ni letra:** solo instrumentos y efectos. El micrófono se usa solo para tararear una
   melodía que se anota en la grilla (módulo 10).
 - **Ni instrumentos grabados:** todos sintetizados.
+- **Ni otra lengua que el castellano,** por ahora: los textos van separados del código para
+  poder traducir después.
 
 ## Herramientas propuestas
 
@@ -75,8 +77,4 @@ está haciendo. Carlos decide si se hace y dónde va en el plan.
 
 Preguntas para Carlos (T001).
 
-1. **¿En qué lengua están los textos de la aplicación?** No es la letra de las canciones, que no
-   hay: son los botones, los nombres y las palabras del idioma simple («clima», «fondo»,
-   «velocidad»). Se propone solo castellano por ahora, con los textos separados del código para
-   poder traducir después.
-2. **¿El nombre de las vistas?** «Vista simple» y «vista de teoría» son nombres de trabajo.
+1. **¿El nombre de las vistas?** «Vista simple» y «vista de teoría» son nombres de trabajo.
