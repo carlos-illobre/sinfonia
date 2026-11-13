@@ -41,6 +41,9 @@ vista de teoría para quien sabe. **La documentación manda; el código es secun
 - **El orden de autoridad:** reglas, maquetas, diseño técnico, pruebas y código. Las pruebas se
   escriben antes que el código y no se cambian para que el código pase.
 - **Un módulo se cierra cuando Carlos lo escuchó.**
+- **Fuera de alcance, decidido:** servidor, cuentas, inteligencia artificial, voz y letra.
+- **Todo directo a `main`,** sin ramas ni pull requests. En una sesión en la nube que arranca en
+  una rama `claude/…`, se sube igual a `main` (`git push origin HEAD:main`).
 
 ## Qué no decide el agente
 

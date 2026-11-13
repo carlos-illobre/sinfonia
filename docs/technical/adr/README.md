@@ -16,7 +16,7 @@ decisión.
 | ADR-004 | TypeScript, pnpm y las bibliotecas de la aplicación | Lo mismo que Ferrebress: Preact, Vite, CSS común y piezas propias | Por escribir |
 | ADR-005 | Cómo se prueba la música sin parlantes | La canción se convierte en una lista de eventos con funciones puras, y las pruebas comparan la lista; el audio de verdad, en pocas pruebas en un navegador con audio sin tiempo real | Por escribir |
 | ADR-006 | Qué controla `pnpm check` | Lo de Ferrebress, más el control de las tres capas y el de las palabras de la vista simple | Por escribir |
-| ADR-007 | Dónde se publica | Un hospedaje estático gratuito, con un ambiente de pruebas | Por escribir |
+| ADR-007 | Dónde se publica | GitHub Pages, pública (decidido por Carlos); falta resolver dónde va el ambiente de pruebas | Por escribir |
 | ADR-008 | Deshacer y rehacer | Todo cambio a la canción es un comando que se puede revertir | Por escribir |
 
 Con su módulo: los instrumentos (sintetizados o grabados, y su licencia), el formato del archivo

@@ -22,5 +22,4 @@ Los capítulos se escriben de a uno, cuando le toca a su módulo (constitución,
 | 08 · Llevarse la canción (`08-export`) | Audio, MIDI y el archivo de Sinfonia | Por escribir |
 | 09 · Dibujar (`09-draw`) | La melodía con una línea | Por escribir |
 | 10 · Tararear (`10-capture`) | El micrófono, marcar el ritmo, el teclado | Por escribir |
-| 11 · Ideas (`11-ideas`) | Que la aplicación proponga | Por escribir |
-| 12 · Partitura (`12-score`) | El pentagrama, en la vista de teoría | Por escribir |
+| 11 · Partitura (`11-score`) | El pentagrama, en la vista de teoría | Por escribir |

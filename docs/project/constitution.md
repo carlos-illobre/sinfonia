@@ -93,9 +93,12 @@ ahí avisa.
 - **Se puede llevar:** toda canción sale como audio, como MIDI y como archivo de Sinfonia, y el
   formato del archivo está documentado en `docs/technical/`.
 - **El micrófono se usa solo cuando la persona lo pide,** y lo que entra no sale del dispositivo.
-- La infraestructura no cuesta nada. Lo que necesite un servidor (cuentas, canciones en la nube,
-  ayuda de una inteligencia artificial) es una funcionalidad nueva con su ADR, y la aplicación
-  sigue andando entera sin eso.
+- **Es pública y gratis:** una página de GitHub Pages que cualquiera abre y usa, sin registrarse.
+  La infraestructura no cuesta nada.
+- **La música la hace la persona.** No hay inteligencia artificial ni nada que componga: la
+  aplicación ofrece cosas listas para elegir (caminos, ritmos, instrumentos) y saca del medio lo
+  que no combina, pero cada sonido lo pone alguien.
+- **Solo instrumentos y efectos.** No hay voz grabada ni letra.
 
 ### VII. Una sola aplicación para el celular y la computadora
 
@@ -193,13 +196,15 @@ Además:
 - **Cada tecnología elegida tiene su ADR**, con las opciones, sus pros y contras, y el porqué.
   Sumar una tecnología nueva (lenguaje, biblioteca de peso, servicio) necesita su ADR antes de
   usarla.
-- **Una sola aplicación web, toda en TypeScript, sin servidor propio** (principio VI).
+- **Una sola aplicación web, toda en TypeScript, sin servidor propio,** publicada en GitHub Pages
+  (principio VI).
 - **Equipo de referencia:** un celular Android de gama media y una notebook vieja. Si ahí suena
   sin cortes, está bien.
 
 ## Cómo se trabaja
 
-**Todo se sube directo a `main`**, sin ramas ni pull requests.
+**Todo se sube directo a `main`**, sin ramas ni pull requests. En una sesión en la nube que
+arranca en una rama `claude/…`, se sube igual a `main` (`git push origin HEAD:main`).
 
 ### Los capítulos
 

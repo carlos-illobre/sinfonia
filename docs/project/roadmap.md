@@ -13,8 +13,8 @@ se usan.
 |---|---|---|
 | 0. La base | Carlos aprueba la constitución, prueba el idioma simple con una maqueta que suena y se eligen las tecnologías | Están cerradas las tareas T001 a T007 |
 | a. Desarrollo | Se construyen los módulos, en el orden de abajo. Hay un solo ambiente: pruebas | Están los módulos 01 a 08: una canción completa, con efectos, que se puede guardar y llevar |
-| b. Pruebas reales | La usan una persona que no sabe teoría y una que sí, y se corrige lo que reportan. Se construyen los módulos 09 en adelante | No queda nada reportado sin resolver |
-| c. Publicación | Primera versión pública | — |
+| b. Pruebas reales | La usan una persona que no sabe teoría y una que sí, y se corrige lo que reportan. Se construyen los módulos 09 a 11 | No queda nada reportado sin resolver |
+| c. Publicación | Primera versión pública, en GitHub Pages | — |
 
 ## Tareas de la base
 
@@ -44,30 +44,32 @@ termina en algo que se puede escuchar.
 | 05 | `harmony` | El fondo: elegir el fondo de cada vuelta, los caminos listos, apoya y tira, la manera de tocar el fondo, el bajo que lo sigue. En la vista de teoría, los acordes con su nombre y su grado | Es la pieza más difícil del idioma simple y la que más necesita lo anterior andando | 01b, 03 | Por escribir |
 | 06 | `effects` | Los efectos de cada capa y los de toda la canción. Una perilla por efecto en la vista simple; todos los parámetros en la de teoría | Pedido de Carlos; necesita las capas | 03 | Por escribir |
 | 07 | `structure` | Las partes: crear, nombrar, repetir, ordenar y copiar | Recién cuando hay con qué llenar una canción entera | 04, 05 | Por escribir |
-| 08 | `export` | Llevarse la canción: audio, MIDI, el archivo de Sinfonia y abrir uno que viene de afuera | Cierra la etapa a: lo hecho sirve fuera de la aplicación | 02, 06, 07 | Por escribir |
+| 08 | `export` | Llevarse la canción: descargarla como audio, como MIDI y como archivo de Sinfonia, y abrir uno que viene de afuera | Cierra la etapa a: lo hecho sirve fuera de la aplicación | 02, 06, 07 | Por escribir |
 | 09 | `draw` | Dibujar la melodía con una línea | Otra manera de entrar una melodía, sobre la grilla ya probada | 01a | Por escribir |
 | 10 | `capture` | Tararear o silbar al micrófono, marcar un ritmo golpeando, tocar con el teclado de la computadora o con un teclado MIDI | Es lo más cercano a la vara del principio II, y lo más difícil de hacer bien | 01a, 04 | Por escribir |
-| 11 | `ideas` | Pedir ideas: cómo seguir, una variación, un final que vuelva a casa, un fondo para una melodía. Con reglas, en el dispositivo | Necesita el fondo y las partes para proponer algo que sirva | 05, 07 | Por escribir |
-| 12 | `score` | El pentagrama en la vista de teoría: ver la canción como partitura y sacarla en PDF | Solo le sirve a quien sabe teoría, y es caro | 05, 07 | Por escribir |
+| 11 | `score` | El pentagrama en la vista de teoría: ver la canción como partitura y sacarla en PDF | Solo le sirve a quien sabe teoría, y es caro | 05, 07 | Por escribir |
+
+## Lo que no se hace
+
+Decidido por Carlos (constitución, principio VI):
+
+- **Ni servidor ni cuentas.** Todo se genera en el navegador y la canción se descarga como
+  archivo.
+- **Nada de inteligencia artificial ni de ideas propuestas por la aplicación:** la edición es
+  puramente humana. Lo listo para elegir (caminos, ritmos) sí está.
+- **Ni voz ni letra:** solo instrumentos y efectos.
 
 ## Lo que falta decidir
 
 Preguntas para Carlos (T001). Cada una, con lo que se propone.
 
-1. **¿Sin cuenta y sin servidor?** Se propone que sí (principio VI): cuesta cero, anda sin
-   internet y no hay datos de nadie que cuidar. La contra: las canciones viven en un dispositivo
-   y pasan a otro solo exportándolas. Tenerlas en la nube se puede sumar después sin rehacer nada.
-2. **¿Solo castellano?** Se propone que sí, por ahora, con los textos separados del código para
+1. **¿Solo castellano?** Se propone que sí, por ahora, con los textos separados del código para
    poder traducir después. El idioma simple habría que diseñarlo de nuevo en cada lengua.
-3. **¿Ideas con inteligencia artificial?** El módulo 11 se propone con reglas, sin servidor.
-   Pedirle a un modelo «una melodía triste para la estrofa» da mejores resultados, pero necesita
-   un servidor y cuesta por uso.
-4. **¿Instrumentos grabados o sintetizados?** Los sintetizados no pesan nada y suenan a
+2. **¿Instrumentos grabados o sintetizados?** Los sintetizados no pesan nada y suenan a
    electrónica; los grabados (un piano, una guitarra de verdad) suenan mejor y pesan varios MB
    cada uno. Se propone empezar el módulo 01 con uno sintetizado y decidirlo en el 03, con un ADR.
-5. **¿Voz y letra?** No están en el plan: ni grabar la voz encima de la canción ni escribir la
-   letra. ¿Van?
-6. **¿El orden?** Si los efectos importan más que el ritmo o el fondo, el 06 puede ir justo
+3. **¿Tararear al micrófono (módulo 10)?** No es voz en la canción: el micrófono solo sirve para
+   anotar la melodía en la grilla. Si tampoco va, el módulo queda en marcar el ritmo y el teclado.
+4. **¿El orden?** Si los efectos importan más que el ritmo o el fondo, el 06 puede ir justo
    después del 03.
-7. **¿Directo a `main`?** La constitución lo dice así, como en Ferrebress.
-8. **¿El nombre de las vistas?** «Vista simple» y «vista de teoría» son nombres de trabajo.
+5. **¿El nombre de las vistas?** «Vista simple» y «vista de teoría» son nombres de trabajo.

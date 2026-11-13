@@ -109,15 +109,13 @@ Cada efecto se llama por lo que se escucha y tiene una sola perilla, de «nada»
 
 ## Cómo entra una melodía
 
-Tocar la grilla es la manera de base. Hay otras tres que no piden saber nada, y cada una es un
+Tocar la grilla es la manera de base. Hay otras dos que no piden saber nada, y cada una es un
 módulo del plan:
 
 - **Dibujar:** se traza una línea con el dedo, como un cerro, y la aplicación la convierte en
   bloques sobre los escalones y los casilleros.
 - **Tararear:** se canta o se silba al micrófono, y la aplicación lo anota en la grilla, corregido
   al escalón más cercano.
-- **Pedir ideas:** la aplicación propone cómo seguir, una variación o un final que vuelva a casa,
-  y la persona elige de oído.
 
 ## Qué se pierde, y cómo se resuelve
 
@@ -135,8 +133,8 @@ módulo del plan:
 
 ## Qué no es
 
-- **No es un generador de canciones.** La persona decide cada sonido; la aplicación le saca del
-  medio lo que no combina.
+- **No es un generador de canciones.** No hay inteligencia artificial ni nada que componga: la
+  persona pone cada sonido, y la aplicación le saca del medio lo que no combina.
 - **No es una teoría paralela.** Cada palabra tiene su equivalente exacto, y quien aprende acá
   puede pasar a la vista de teoría y encontrarse con lo mismo, con otro nombre.
 
