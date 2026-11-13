@@ -44,8 +44,7 @@ vista de teoría para quien sabe. **La documentación manda; el código es secun
   el cierre de cada módulo: dice si las herramientas le sirven a quien compone y propone
   mejoras y herramientas nuevas. Propone, no decide.
 - **Un módulo se cierra cuando Carlos lo escuchó.**
-- **Fuera de alcance, decidido:** servidor, cuentas, inteligencia artificial, voz, letra e
-  instrumentos grabados.
+- **Fuera de alcance, decidido:** servidor, cuentas, inteligencia artificial, voz y letra.
 - **Todo directo a `main`,** sin ramas ni pull requests. En una sesión en la nube que arranca en
   una rama `claude/…`, se sube igual a `main` (`git push origin HEAD:main`).
 

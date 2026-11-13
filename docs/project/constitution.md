@@ -102,8 +102,11 @@ ahí avisa.
   componga: ofrece cosas listas para elegir (caminos, ritmos, instrumentos) y saca del medio lo
   que no combina, pero cada sonido lo pone alguien. Lo que cada uno haga con el archivo fuera de
   la aplicación (escribirlo a mano, pedirle a un agente que lo mejore) es cosa suya.
-- **Solo instrumentos y efectos.** No hay voz grabada ni letra. Los instrumentos son todos
-  sintetizados: no se usan sonidos grabados.
+- **Solo instrumentos y efectos.** No hay voz grabada ni letra. Hay instrumentos
+  sintetizados, que no pesan nada, e instrumentos grabados, que suenan como los de verdad. Un
+  instrumento grabado se baja recién cuando se elige, dice cuánto pesa antes de bajarlo y queda
+  guardado en el dispositivo; una canción suena aunque falte bajar alguno, con un sintetizado en
+  su lugar, y lo dice.
 
 ### VII. Una sola aplicación para el celular y la computadora
 

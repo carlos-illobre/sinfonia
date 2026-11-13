@@ -53,8 +53,7 @@ Reglas:
 - **Carlos no sabe teoría musical.** Escribí en idioma simple, con el término de la teoría entre
   paréntesis la primera vez. Cada hallazgo, con un ejemplo que se pueda escuchar: una canción
   conocida, o qué poner en la grilla para oírlo.
-- **Respetá «Lo que no se hace»** (sin servidor, sin inteligencia artificial, sin voz ni letra,
-  sin instrumentos grabados): no lo vuelvas a proponer.
+- **Respetá «Lo que no se hace»** (sin servidor, sin inteligencia artificial, sin voz ni letra): no lo vuelvas a proponer.
 - **No escuchás, leés.** Una canción la entendés por su archivo de Sinfonia, que es texto: qué
   suena, cuándo y a qué altura. Lo que decís de cómo suena un instrumento o un efecto sale de lo
   que sabés, no de haberlo oído.

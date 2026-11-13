@@ -40,7 +40,7 @@ termina en algo que se puede escuchar.
 | 00 | `app` | Las reglas generales: el marco, cambiar de vista, el puente, el detalle fino, deshacer, el teclado, reproducir y parar, las esperas | No se construye solo: cada regla se construye con el primer módulo que la necesita | — | Por escribir |
 | 01 | `melody` | En dos etapas. **a. La melodía en la vista simple:** la grilla y la escalera, poner, mover, alargar y borrar bloques, que suene al tocar, reproducir en vuelta, la velocidad, el clima y correr la canción, con un solo instrumento. Con él nace la base: la canción, el motor de sonido y deshacer. **b. La misma melodía en la vista de teoría:** las notas con su nombre, la tonalidad, el modo, el tempo y el compás, y el cambio de vista | Es lo que da nombre a la aplicación. La b va pegada para que las dos vistas existan desde el primer módulo: si la de teoría se deja para después, la canción se diseña solo para la simple | a: T003, T005; b: 01a | Por escribir |
 | 02 | `songs` | Mis canciones: se guarda sola, abrir, nombre, copiar, borrar y recuperar lo borrado. Descargar la canción como archivo de Sinfonia (texto) y abrir un archivo que viene de afuera. Ver en qué minuto y segundo va la música | En cuanto hay algo que vale la pena no perder. El archivo va acá y no al final porque es como Carlos y un agente se pasan una canción: el agente la lee y la corrige como texto, y Carlos la abre para escucharla | 01a | Por escribir |
-| 03 | `instruments` | Elegir el instrumento de una capa, varias capas de melodía, volumen, silenciar y «solo esta» | Pedido de Carlos; cambia más el resultado que cualquier otra cosa | 01a | Por escribir |
+| 03 | `instruments` | Elegir el instrumento de una capa, sintetizado o grabado; bajar un instrumento grabado y saber cuánto pesa; varias capas de melodía, volumen, silenciar y «solo esta» | Pedido de Carlos; cambia más el resultado que cualquier otra cosa | 01a | Por escribir |
 | 04 | `rhythm` | La capa de ritmo: la grilla de golpes, los ritmos listos, el balanceo | Con ritmo, una melodía ya parece una canción | 03 | Por escribir |
 | 05 | `harmony` | El fondo: elegir el fondo de cada vuelta, los caminos listos, apoya y tira, la manera de tocar el fondo, el bajo que lo sigue. En la vista de teoría, los acordes con su nombre y su grado | Es la pieza más difícil del idioma simple y la que más necesita lo anterior andando | 01b, 03 | Por escribir |
 | 06 | `effects` | Los efectos de cada capa y los de toda la canción. Una perilla por efecto en la vista simple; todos los parámetros en la de teoría | Pedido de Carlos; necesita las capas | 03 | Por escribir |
@@ -60,7 +60,6 @@ Decidido por Carlos (constitución, principio VI):
   puramente humana. Lo listo para elegir (caminos, ritmos) sí está.
 - **Ni voz ni letra:** solo instrumentos y efectos. El micrófono se usa solo para tararear una
   melodía que se anota en la grilla (módulo 10).
-- **Ni instrumentos grabados:** todos sintetizados.
 - **Ni otra lengua que el castellano,** por ahora: los textos van separados del código para
   poder traducir después.
 
