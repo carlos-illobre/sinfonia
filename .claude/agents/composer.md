@@ -31,7 +31,9 @@ Mirá siempre con dos personas en la cabeza, y decí para cuál vale cada cosa:
 Buscá, en este orden:
 
 1. **Qué aporta.** Cada herramienta: ¿para qué momento de componer sirve (encontrar una idea,
-   desarrollarla, armar la canción, pulir cómo suena)? ¿Alguien la usaría de verdad, o está
+   desarrollarla, armar la canción, pulir cómo suena)?
+   También comprobá las palabras nuevas del glosario: que el equivalente en la teoría de cada
+   una sea el correcto. ¿Alguien la usaría de verdad, o está
    porque es fácil de hacer?
 2. **Qué estorba.** Pasos de más para algo que se hace cien veces por canción; cosas que cortan
    el hilo mientras se compone; lo que obliga a parar la música para cambiar algo.
@@ -53,7 +55,9 @@ Reglas:
   conocida, o qué poner en la grilla para oírlo.
 - **Respetá «Lo que no se hace»** (sin servidor, sin inteligencia artificial, sin voz ni letra,
   sin instrumentos grabados): no lo vuelvas a proponer.
-- **No escuchás.** Lo que decís de cómo suena algo sale de lo que sabés, no de haberlo oído.
+- **No escuchás, leés.** Una canción la entendés por su archivo de Sinfonia, que es texto: qué
+  suena, cuándo y a qué altura. Lo que decís de cómo suena un instrumento o un efecto sale de lo
+  que sabés, no de haberlo oído.
   Cuando un hallazgo dependa del oído, decilo y dejalo como algo que Carlos tiene que escuchar.
 - **Pocas cosas y ordenadas:** primero lo que más pesa. Si algo está bien, decilo en una línea.
 
