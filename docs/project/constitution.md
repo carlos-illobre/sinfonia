@@ -98,7 +98,8 @@ ahí avisa.
 - **La música la hace la persona.** No hay inteligencia artificial ni nada que componga: la
   aplicación ofrece cosas listas para elegir (caminos, ritmos, instrumentos) y saca del medio lo
   que no combina, pero cada sonido lo pone alguien.
-- **Solo instrumentos y efectos.** No hay voz grabada ni letra.
+- **Solo instrumentos y efectos.** No hay voz grabada ni letra. Los instrumentos son todos
+  sintetizados: no se usan sonidos grabados.
 
 ### VII. Una sola aplicación para el celular y la computadora
 
@@ -215,6 +216,7 @@ Cada módulo es un capítulo en `docs/chapters/`, con un número fijo:
 | `summary.md` | Una página para entrar rápido: cada regla en una línea, lo que más pesa y lo que falta decidir. Es lo primero que se lee |
 | `rules.md` | Las reglas vigentes, con sus escenarios numerados (`E01`, `E02`…) en forma *dado / cuando / entonces*, incluidos los de error y de borde. Cada regla dice cómo se ve y cómo se llama en la vista simple y en la de teoría |
 | `screens.md` | Qué se tiene que poder hacer en cada pantalla, en cada vista, y qué maqueta de `docs/design/mockups/` vale |
+| `composer-review.md` | La opinión vigente del compositor sobre el alcance, las maquetas y el módulo programado. No es una regla: lo que Carlos acepta pasa a `rules.md` |
 
 `rules.md` tiene siempre lo vigente: cada cambio lo actualiza en el mismo commit. No hay otro
 documento de requerimientos: una regla está en un solo lugar.
@@ -222,7 +224,19 @@ documento de requerimientos: una regla está en un solo lugar.
 ### Los nueve pasos de un módulo
 
 **Antes del paso 1, el alcance.** El agente le lista a Carlos todo lo que abarca el módulo, para
-que evalúe si se divide. Se empieza recién con su respuesta.
+que evalúe si se divide. Junto con la lista va la opinión del compositor (abajo) sobre cada
+herramienta. Se empieza recién con la respuesta de Carlos.
+
+**El compositor (agente `composer`).** Carlos no sabe música, así que no puede juzgar solo si una
+herramienta le sirve a alguien que compone. El compositor mira como músico, con el contexto
+limpio, y dice qué aporta, qué estorba, qué limita, qué falta y qué sobra, para quien no sabe
+teoría y para quien sabe. Interviene tres veces en cada módulo: sobre el alcance, sobre las
+maquetas y sobre el módulo programado. **Propone y no decide:** lo que Carlos acepta entra a las
+reglas del módulo; una herramienta nueva que no entra en el módulo va a «Herramientas propuestas»
+del [plan](roadmap.md), donde Carlos decide si se hace y cuándo; lo que descarta se anota en el
+capítulo con el porqué, para que nadie lo vuelva a proponer. El compositor no escucha: lo que
+depende del oído lo deja como una prueba para Carlos, y la opinión de músicos de verdad llega en
+la etapa de pruebas reales.
 
 Los hace el mismo agente en la misma sesión, en este orden; el código se escribe recién en el
 sexto. Solo las revisiones las hace un subagente con el contexto limpio, porque quien diseñó o
@@ -231,14 +245,14 @@ programó no puede revisarse.
 | Paso | Rol | Qué hace | Deja | Aprueba Carlos |
 |---|---|---|---|---|
 | 1 | Analista | Le pregunta a Carlos **todo** lo que haga falta para cubrir la funcionalidad completa: cada caso, cada borde, cada error. Las preguntas van en idioma simple, con un ejemplo que se pueda escuchar cuando la pregunta es sobre cómo suena algo: Carlos no tiene por qué saber teoría para decidir. Toda regla que define Carlos la cuestiona: le ofrece las alternativas mejores que encuentre y las desventajas de aplicarla tal cual. Propone las palabras nuevas del idioma simple, con su equivalente en la teoría. Las preguntas van todas juntas, en tandas, hasta que no quede nada sin respuesta | `rules.md` y `summary.md`, con los escenarios, y las filas nuevas del glosario | Sí |
-| 2 | Director de arte (skill `art-director`) | Tres versiones muy distintas de cada pantalla, una por vez y en el orden en que se usan, **funcionando y sonando**, en el visor de maquetas. Primero la vista simple, después la de teoría de la misma pantalla. Carlos elige una antes de pasar a la siguiente. Sin restricciones: puede romper las reglas y el marco para un diseño mejor, diciendo qué rompe | `docs/design/mockups/<pantalla>/` y `screens.md` | Sí: las ve, las escucha y da sus comentarios |
+| 2 | Director de arte (skill `art-director`) | Tres versiones muy distintas de cada pantalla, una por vez y en el orden en que se usan, **funcionando y sonando**, en el visor de maquetas. Primero la vista simple, después la de teoría de la misma pantalla. Carlos elige una antes de pasar a la siguiente. Sin restricciones: puede romper las reglas y el marco para un diseño mejor, diciendo qué rompe | `docs/design/mockups/<pantalla>/`, `screens.md` y, del compositor, que intenta componer algo con cada una de las tres, cuál le sirve más a quien compone y por qué | Sí: las ve, las escucha y da sus comentarios, con la opinión del compositor a la vista |
 | 2b | Maquetador (agente `mockup-builder`) | Construye la maqueta final: la variante elegida, lo que Carlos quiera de las otras y sus comentarios, ajustada a las reglas aprobadas. Nunca modifica lo del director | `docs/design/mockups/<pantalla>/final/` | Sí: la evalúa; si pide cambios, vuelve el maquetador |
 | 3 | Arquitecto | Qué le agrega el módulo a la canción y a su archivo, sus comandos, sus eventos, cómo suena (qué pasa en el audio), la sección «Seguridad», las **metas de performance** (milisegundos entre el toque y el sonido, uso del procesador mientras suena, bytes que se bajan) y las tareas con sus dependencias; un ADR si hay una decisión técnica | `docs/technical/modules/<module>.md` | — |
 | 4 | Revisor del diseño (agente `design-reviewer`) y revisor de teoría musical (agente `music-reviewer`), por separado | El primero busca puntos débiles y mejoras al diseño técnico, contra la constitución. El segundo lo mira como un músico: que cada palabra del idioma simple tenga un equivalente correcto en la teoría, que lo que la vista simple deja hacer suene bien de verdad, y que la vista de teoría no tenga errores que un músico notaría | `docs/technical/modules/<module>-design-review.md` y `<module>-music-review.md` | — |
 | 5 | Arquitecto | Corrige el diseño con lo que encontraron los dos revisores y se lo presenta a Carlos | El diseño final | Sí |
 | 6 | Desarrollador | Primero las pruebas: una por escenario y las que miden las metas de performance, todas fallando. Después el código que las hace pasar, con cobertura total; `pnpm check` en verde | Pruebas y código | — |
 | 7 | Revisor del código (agente `code-reviewer`) y revisor de teoría musical (agente `music-reviewer`), por separado | El primero compara el código con las reglas, las pantallas y el diseño. El segundo comprueba que lo que suena sea lo que dicen las reglas. Lo que encuentran se arregla | `docs/technical/modules/<module>-code-review.md` y la sección del código de `<module>-music-review.md` | — |
-| 8 | Carlos | Lo prueba y lo escucha en el ambiente de pruebas, en la vista simple; los ajustes vuelven al paso que corresponda | — | Sí: cierra el módulo |
+| 8 | Compositor (agente `composer`) y Carlos | El compositor usa el módulo programado para componer algo corto, dice si cumple lo que prometía y le deja a Carlos una lista de qué probar y qué escuchar. Carlos lo prueba y lo escucha en el ambiente de pruebas, en la vista simple; los ajustes vuelven al paso que corresponda | La sección del módulo programado de `composer-review.md` | Sí: cierra el módulo |
 | 9 | Redactor | El manual del módulo, en idioma simple, con capturas y con ejemplos que se escuchan | `docs/manual/` | — |
 
 La sección «Seguridad» del diseño contesta siempre: qué entra de afuera y cómo se valida

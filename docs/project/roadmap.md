@@ -11,7 +11,7 @@ se usan.
 
 | Etapa | Qué pasa | Termina cuando |
 |---|---|---|
-| 0. La base | Carlos aprueba la constitución, prueba el idioma simple con una maqueta que suena y se eligen las tecnologías | Están cerradas las tareas T001 a T007 |
+| 0. La base | Carlos aprueba la constitución, prueba el idioma simple con una maqueta que suena y se eligen las tecnologías | Están cerradas las tareas T001 a T008 |
 | a. Desarrollo | Se construyen los módulos, en el orden de abajo. Hay un solo ambiente: pruebas | Están los módulos 01 a 08: una canción completa, con efectos, que se puede guardar y llevar |
 | b. Pruebas reales | La usan una persona que no sabe teoría y una que sí, y se corrige lo que reportan. Se construyen los módulos 09 a 11 | No queda nada reportado sin resolver |
 | c. Publicación | Primera versión pública, en GitHub Pages | — |
@@ -21,12 +21,13 @@ se usan.
 | Tarea | Qué | Depende de | Estado |
 |---|---|---|---|
 | T001 | Carlos lee la [constitución](constitution.md) y este plan, los cuestiona y los aprueba. Contesta «Lo que falta decidir», abajo | — | Libre |
-| T002 | **La prueba del idioma simple.** Una maqueta que suena, sin el resto de la aplicación: la escalera, el clima, la grilla, el fondo con sus colores y un camino listo. Carlos intenta hacer una melodía sin que nadie le explique nada. Lo que no entienda, se cambia | T001 | Libre |
+| T002 | **La prueba del idioma simple.** Después de T008. Una maqueta que suena, sin el resto de la aplicación: la escalera, el clima, la grilla, el fondo con sus colores y un camino listo. Carlos intenta hacer una melodía sin que nadie le explique nada. Lo que no entienda, se cambia | T001 | Libre |
 | T003 | El [idioma simple](simple-language.md) y el [glosario](glossary.md), corregidos con lo que salió de T002 y aprobados | T002 | Libre |
 | T004 | Los [ADR](../technical/adr/README.md) de la base, cada uno con sus opciones, y `docs/technical/architecture.md` | T001 | Libre |
 | T005 | El esqueleto: el repositorio de código, `pnpm check` con todos sus controles y el despliegue al ambiente de pruebas, con una pantalla vacía | T004 | Libre |
-| T006 | Los agentes y el skill de los nueve pasos, adaptados de Ferrebress: `art-director` (con maquetas que suenan), `mockup-builder`, `design-reviewer`, `code-reviewer`, y el nuevo `music-reviewer` | T001 | Libre |
+| T006 | Los agentes y el skill de los nueve pasos, adaptados de Ferrebress: `art-director` (con maquetas que suenan), `mockup-builder`, `design-reviewer`, `code-reviewer`, y el nuevo `music-reviewer`. El `composer` ya está | T001 | Libre |
 | T007 | El lenguaje visual de partida y el visor de maquetas (`docs/design/`) | T002 | Libre |
+| T008 | El compositor mira el plan entero y el idioma simple, antes de la maqueta: qué herramientas aportan, cuáles faltan y qué orden conviene. Carlos decide qué se toma | T001 | Libre |
 
 ## Módulos, en orden
 
@@ -57,19 +58,24 @@ Decidido por Carlos (constitución, principio VI):
   archivo.
 - **Nada de inteligencia artificial ni de ideas propuestas por la aplicación:** la edición es
   puramente humana. Lo listo para elegir (caminos, ritmos) sí está.
-- **Ni voz ni letra:** solo instrumentos y efectos.
+- **Ni voz ni letra:** solo instrumentos y efectos. El micrófono se usa solo para tararear una
+  melodía que se anota en la grilla (módulo 10).
+- **Ni instrumentos grabados:** todos sintetizados.
+
+## Herramientas propuestas
+
+Lo que propone el compositor (constitución, «Los nueve pasos») y no entra en el módulo que se
+está haciendo. Carlos decide si se hace y dónde va en el plan.
+
+| Herramienta | Qué problema resuelve | Tamaño | Salió de | Decisión |
+|---|---|---|---|---|
 
 ## Lo que falta decidir
 
-Preguntas para Carlos (T001). Cada una, con lo que se propone.
+Preguntas para Carlos (T001).
 
-1. **¿Solo castellano?** Se propone que sí, por ahora, con los textos separados del código para
-   poder traducir después. El idioma simple habría que diseñarlo de nuevo en cada lengua.
-2. **¿Instrumentos grabados o sintetizados?** Los sintetizados no pesan nada y suenan a
-   electrónica; los grabados (un piano, una guitarra de verdad) suenan mejor y pesan varios MB
-   cada uno. Se propone empezar el módulo 01 con uno sintetizado y decidirlo en el 03, con un ADR.
-3. **¿Tararear al micrófono (módulo 10)?** No es voz en la canción: el micrófono solo sirve para
-   anotar la melodía en la grilla. Si tampoco va, el módulo queda en marcar el ritmo y el teclado.
-4. **¿El orden?** Si los efectos importan más que el ritmo o el fondo, el 06 puede ir justo
-   después del 03.
-5. **¿El nombre de las vistas?** «Vista simple» y «vista de teoría» son nombres de trabajo.
+1. **¿En qué lengua están los textos de la aplicación?** No es la letra de las canciones, que no
+   hay: son los botones, los nombres y las palabras del idioma simple («clima», «fondo»,
+   «velocidad»). Se propone solo castellano por ahora, con los textos separados del código para
+   poder traducir después.
+2. **¿El nombre de las vistas?** «Vista simple» y «vista de teoría» son nombres de trabajo.

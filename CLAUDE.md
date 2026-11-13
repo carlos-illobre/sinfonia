@@ -40,8 +40,12 @@ vista de teoría para quien sabe. **La documentación manda; el código es secun
 - **Las pantallas salen del director de arte,** siempre tres versiones, funcionando y sonando.
 - **El orden de autoridad:** reglas, maquetas, diseño técnico, pruebas y código. Las pruebas se
   escriben antes que el código y no se cambian para que el código pase.
+- **El compositor (agente `composer`) opina antes que Carlos decida** el alcance, las maquetas y
+  el cierre de cada módulo: dice si las herramientas le sirven a quien compone y propone
+  mejoras y herramientas nuevas. Propone, no decide.
 - **Un módulo se cierra cuando Carlos lo escuchó.**
-- **Fuera de alcance, decidido:** servidor, cuentas, inteligencia artificial, voz y letra.
+- **Fuera de alcance, decidido:** servidor, cuentas, inteligencia artificial, voz, letra e
+  instrumentos grabados.
 - **Todo directo a `main`,** sin ramas ni pull requests. En una sesión en la nube que arranca en
   una rama `claude/…`, se sube igual a `main` (`git push origin HEAD:main`).
 

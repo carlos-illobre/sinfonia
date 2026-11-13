@@ -19,5 +19,5 @@ decisión.
 | ADR-007 | Dónde se publica | GitHub Pages, pública (decidido por Carlos); falta resolver dónde va el ambiente de pruebas | Por escribir |
 | ADR-008 | Deshacer y rehacer | Todo cambio a la canción es un comando que se puede revertir | Por escribir |
 
-Con su módulo: los instrumentos (sintetizados o grabados, y su licencia), el formato del archivo
+Con su módulo: cómo se sintetizan los instrumentos, el formato del archivo
 de canción, reconocer lo que se tararea, y el pentagrama.
